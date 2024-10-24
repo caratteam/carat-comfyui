@@ -138,6 +138,8 @@ parser.add_argument("--multi-user", action="store_true", help="Enables per-user 
 
 parser.add_argument("--verbose", default='INFO', const='DEBUG', nargs="?", choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'], help='Set the logging level')
 
+parser.add_argument("--user_id", type=str, default="9999", help="Set the user id.")
+
 # The default built-in provider hosted under web/
 DEFAULT_VERSION_STRING = "comfyanonymous/ComfyUI@latest"
 
